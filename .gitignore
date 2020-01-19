@@ -21,4 +21,8 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+.DS_Store
 wp-content/themes/.DS_Store
+wp-content/themes/udemy/.DS_Store
+wp-content/themes/udemy/assets/

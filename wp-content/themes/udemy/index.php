@@ -109,18 +109,19 @@
 
             <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-			<?php
+        			<?php
 
-			if(has_nav_menu( 'primary' )) {
-				wp_nav_menu([
-					'theme_location' => 'primary',
-					'container' => false,
-					'fallback_cb' => false,
-					'depth' => 4
-			]);	
-			}
+        			if(has_nav_menu( 'primary' )) {
+        				wp_nav_menu([
+        					'theme_location' => 'primary',
+        					'container' => false,
+        					'fallback_cb' => false,
+        					'depth' => 4,
+                  'walker' => new JU_Custom_Nav_Walker()
+        			]);	
+        			}
 
-			?>
+        			?>
 
             <!-- Top Cart
             ============================================= -->
